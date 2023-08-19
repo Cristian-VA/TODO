@@ -1,0 +1,383 @@
+body, 
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+}
+
+
+.login-container{
+    width: 40vh;
+    height: 465px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    position: relative;
+    border-radius: 20px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #faf4f4;
+    display: block;
+    
+}
+
+
+
+h1{
+    font-size: 2rem;
+    color: #faf4f4;
+    text-align: center;
+    padding: 0.6em 0 0;
+    
+}
+
+.poligon1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.poligon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    display: none;
+   
+}
+
+
+.eclipse{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+h1{
+    color: #410404;
+    opacity: 0.6;
+    margin: 0;
+    font-weight: 400;
+}
+
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+
+}
+.logo{
+    width: 100px;
+    display: block;
+   margin: 1em auto;
+   
+}
+
+.login-content{
+    width: 70%;
+    margin: auto;
+}
+
+.facebook-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+h2{
+    text-align: center;
+    color: rgb(80, 44, 44);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.6em 0 0;
+}   
+
+.size{
+    width: 60px;
+    border: none;
+    cursor: pointer;
+   
+}
+
+.size:hover{
+    opacity: 0.6;
+    }
+
+.fb-color{
+    filter: invert(10%) sepia(47%) saturate(2402%) hue-rotate(199deg) brightness(91%) contrast(93%);
+}
+
+.gh-color{
+    filter: invert(12%) sepia(2%) saturate(10%) hue-rotate(356deg) brightness(99%) contrast(80%)   
+}
+
+.login-options{
+    display: flex;
+    justify-content: space-between;
+}
+
+h3{
+    text-align: center;
+    color: rgb(90, 88, 88);
+}
+
+input{
+    width: 100%;
+    padding: 0.9em;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 0px 1em;
+    color: #410404;
+    font-size: 1rem;
+}
+
+input:focus{
+    box-shadow: rgba(148, 6, 6, 0.2) 0px 2px 8px 0px;
+    border-color: none ;    
+    outline: none;
+}
+
+         
+.dark-btn {
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    padding: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+.disable{
+    opacity: 0.9;
+    pointer-events: none;
+}
+.light-btn{
+    background-image: linear-gradient(to right, #f8edec 0%, #f8c3c6  51%, #f1bdbb  100%);
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #521416;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    padding: 1em;
+    font-family: 'Montserrat', sans-serif;
+   
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.light-btn:hover {
+    background-position: right center; 
+  
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .dark-btn:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+ 
+  #modal{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 10px;
+
+    display: none;
+    
+  }
+
+  #close{
+    width: 20px;
+    float: right;
+    padding:  0.4em 0.7em;
+    margin: 0px;
+    cursor: pointer;
+    filter: invert(12%) sepia(54%) saturate(7449%) hue-rotate(351deg) brightness(88%) contrast(97%);
+  }
+
+ #close:hover{
+    opacity: 0.5;
+  }
+
+  #sign-up{
+    width: 80%;
+    display: block;
+    margin: auto;
+    
+    padding-top: 2em;
+  }
+
+  .loading-svg{
+    display: block;
+    margin:  auto;
+    width: 120px;
+  }
+
+  .error-msg{
+    font-size: 1rem;
+
+  }
+
+
+
+
+
+
+  
+
+  @media (max-width: 376px){
+    body,html {
+        font-size: 13px;
+    }
+    .size{
+       width: 50px;
+    }
+    .login-container{
+        height: 360px;
+        width: 250px;
+    }.width{
+        width: 80%;
+        margin: 0 auto;
+    }#modal{
+        height: 250px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+  @media (min-width: 767px){
+    body,html {
+        font-size: 19px;
+    }
+    .size{
+        width: 90px;
+    }
+    .login-container{
+        height: 560px;
+    }
+    #modal{
+        width: 450px;
+        height: 450px;
+    }
+    .margin-bottom{
+        margin-bottom: 1.5em;
+    }.app-name{
+        font-size: 60px;
+  }.logo{
+    width: 200px;
+  }
+  }
+
+  @media (min-width: 1000px){
+    body,html {
+        font-size: 14.8px;
+    }
+    .size{
+        width: 90px;
+    }
+    .login-container{
+        height: 480px;
+        width: 400px;
+        margin: 0;
+    }
+    .poligon{
+        display: block;
+    }main{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    padding: 4em;
+    }.logo{
+    width: 300px;
+    }.app-name{
+ 
+    font-weight: 700;
+    color: #220303;
+    }
+
+  }
+
+  @media (min-width: 1200px){
+    body,html {
+        font-size: 20px;
+    }
+    .size{
+        width: 90px;
+    }
+    .login-container{
+        height: 590px;
+        width: 500px;
+     
+    }.logo{
+    width: 350px;
+    }.app-name{
+    font-size: 80px;
+    }main{
+    padding: 5em;
+    }
+    }
+
+  @media (min-width: 1600px){
+    body,html {
+        font-size: 25px;
+    }
+    .size{
+        width: 105px;
+    }
+    .login-container{
+        height: 740px;
+        width: 550px;
+     
+    }.logo{
+    width: 380px;
+    }.app-name{
+    font-size: 90px;
+    }main{
+    padding: 4em;
+
+    }#modal{
+        width: 550px;
+        height: 550px;
+    }
+
+    }

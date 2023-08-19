@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="app.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+
+
+        
+
+        <header>
+            <div class="header-flex">
+            <h1 class="logo-text">Todo <span class="span-logo"> App </span></h1>
+            <img class="logo" src="imgs\logo.png" alt="">
+            </div>
+
+            <div class="header-flex">
+                <h2 class="username" id="user"></h2>
+
+                <div id="display-profile-pic"></div>
+
+                 <button class="dark-btn fixed-bottom-left"id="log-out"> log out</button>
+            </div>
+     
+        </header>
+
+        <section class="nav">
+            <button id="ToDo-btn" class="light-btn width">To do List</button>
+            <button id="Calendar-btn"class="light-btn width"> Calendar</button>
+        </section>
+
+
+        <!--welcome message--> 
+        <section id="welcome-msg">
+           
+        </section>
+
+
+        <!--notes html--> 
+
+        <section id="ToDo" class="content wide">
+            <div>
+            <h1 class="logo-text text-center"> To Do List</h1>
+                <div class="input-form">
+                    <textarea id="todo-task" placeholder="Write " required></textarea>
+                    <div class="content-flex">
+                        <select id="todo-importance">
+                            <option value="ASAP">ASAP</option>
+                            <option value="Important">Important</option>
+                            <option value="Can wait">Can wait</option>                      
+                        </select>
+
+                        <select id="todo-type">
+                            <option value="Work">Work</option>
+                            <option value="Social">Social</option>
+                            <option value="Selfcare">Selfcare</option>
+                            <option value="House Work">House Work</option>
+                        </select>
+                        <button id="todo-post-btn" class="dark-btn add"> +</button>
+                    </div>
+                </div>
+            </div>
+
+                <div id="tasks-container">
+                    
+                </div>  
+        </section>
+
+
+        <!--calendar--> 
+
+        <section id="calendar-section">
+            <div id="container">
+                <div id="header">
+                  <div id="month-display"></div>
+                  <div>
+                    <button id="back-button">Back</button>
+                    <button id="next-button">Next</button>
+                  </div>
+                </div>
+          
+                <div id="weekdays">
+                  <div>Sunday</div>
+                  <div>Monday</div>
+                  <div>Tuesday</div>
+                  <div>Wednesday</div>
+                  <div>Thursday</div>
+                  <div>Friday</div>
+                  <div>Saturday</div>
+                </div>
+          
+                <div id="calendar"></div>
+              </div>
+          
+            
+          
+          
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="modal" >
+            <img  id="close" src="imgs\xmark-solid.svg" alt="">
+
+                <div id="log-out-form">
+                    <H1 class="logout-msg">Logging out <br><span class="normal-text"> Are you sure you want to log out?</span></H1>
+              
+                    <div id="message">
+                        <button id="confirm-log-out" class="dark-btn confirm"> confirm log out</button>
+                    </div>
+                </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="main.js" type="module"></script>
+    </body>
+</html>

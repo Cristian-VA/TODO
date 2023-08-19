@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <img class="poligon1" src="imgs\Polygon 2.png" alt="">
+        <img class="eclipse" src="imgs\Ellipse 1.png"alt="">
+        <img class="poligon" src="imgs\Polygon.png" alt="">
+
+
+        <main>
+        <header class="header">
+            <h1 class="app-name"> ToDo <span>app</span></h1>
+            <img class="logo" src="imgs\logo.png"alt="">
+            <button id="anon-btn"class="light-btn width">Sign in anonymously</button>
+        </header>
+
+
+       
+        <section class="login-container">
+            <div class="login-content">  
+                <h2> Sign in</h2>
+                    <div class="login-options">
+                            <img id="fb-login" class="size fb-color"  src="imgs\square-facebook.svg" alt="">
+                            <img id="google-login" class="size "  src="imgs\google.svg" alt="">
+                            <img id="github-login" class="size  gh-color"  src="imgs\square-github.svg" alt="">
+                    </div>
+                <h3>or...</h3>
+
+                <form id="login-form">
+                    <div class="form-group">
+                        <input type="text" id="login-email" placeholder="Email" name="lemail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="login-password" placeholder="Password" name="lpassword" required>
+                    </div>
+                    <button class="dark-btn" type="submit"> Login</button>
+                </form>
+                <button id="sign-btn" class="light-btn" > Sign UP</button>
+            </div>
+
+            <h2 id="login-error-msg"></h2>
+
+            
+        </section>
+    </main>
+
+
+
+        <section id="modal" >
+                <img  id="close" src="imgs\xmark-solid.svg" alt="">
+
+                    <form id="sign-up">
+                        <H1 class="margin-bottom">Sign up</H1>
+                        <div class="form-group">
+                            
+                            <input type="text" id="signup-email" placeholder="Email" name="lemail" required>
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="password" id="signup-password" placeholder="password" name="sipassword" required>
+                        </div>
+                        <div id="message">
+                            <button class="dark-btn" type="submit"> Sign UP</button>
+                        </div>
+                    </form>
+
+        </section>
+
+
+
+
+
+        <script src="index.js" type="module"></script>
+
+        
+    </body>
+</html>
